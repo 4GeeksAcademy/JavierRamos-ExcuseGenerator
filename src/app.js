@@ -5,11 +5,6 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = () => {
-  document.querySelector("#excusa").innerHTML = generarExcusa();
-  console.log("Prueba para ver que sale texto en la consola");
-};
-
 let generarExcusa = () => {
   let quien = ["El perro", "Mi abuela", "El afilador", "Mi periquito"];
   let accion = ["se comió", "rompió", "aplastó", "vendió"];
