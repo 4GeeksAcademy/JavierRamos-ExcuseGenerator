@@ -31,3 +31,6 @@ let generarExcusa = () => {
     cuando[cuandoNum]
   );
 };
+window.onload = () => {
+  document.querySelector(`#excusa`).innerHTML = generarExcusa();
+};
