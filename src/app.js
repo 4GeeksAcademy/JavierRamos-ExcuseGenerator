@@ -16,19 +16,19 @@ let generarExcusa = () => {
     "mientras ordenaba mi cuarto",
     "en cuanto me dormí"
   ];
-  let quienNum = Math.floor(Math.random() * 4);
-  let accionNum = Math.floor(Math.random() * 4);
-  let queNum = Math.floor(Math.random() * 3);
-  let cuandoNum = Math.floor(Math.random() * 5);
+  let quienNumero = Math.floor(Math.random() * quien.length);
+  let accionNumero = Math.floor(Math.random() * accion.length);
+  let queNumero = Math.floor(Math.random() * que.length);
+  let cuandoNumero = Math.floor(Math.random() * cuando.length);
 
   return (
-    quien[quienNum] +
+    quien[quienNumero] +
     " " +
-    accion[accionNum] +
+    accion[accionNumero] +
     " " +
-    que[queNum] +
+    que[queNumero] +
     " " +
-    cuando[cuandoNum]
+    cuando[cuandoNumero]
   );
 };
 window.onload = () => {
